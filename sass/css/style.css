@@ -77,11 +77,6 @@ html {
 
 /*Texto y Boton index*/
 .center-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: white; }
   .center-text h1 {
     font-size: 50px;
@@ -98,6 +93,12 @@ html {
 
 .button:hover {
   background-color: #e2e416; }
+
+.section-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
 /*Formulario de Contacto*/
 fieldset {
