@@ -62,19 +62,18 @@ html {
   height: 75vh;
   background-color: white;
   background-attachment: fixed;
-  background-size: cover; }
+  background-size: auto; }
 
 .section-3 {
   height: 100vh;
   background-image: url(../../images/fondovert3.jpeg);
   background-attachment: fixed;
-  background-size: contain;
-  background-repeat: no-repeat; }
+  background-size: auto; }
 
 .section-4 {
   height: 100vh;
   background-color: grey;
-  background-size: cover; }
+  background-size: auto; }
 
 /*Texto y Boton index*/
 .center-text {
