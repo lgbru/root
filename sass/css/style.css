@@ -73,7 +73,8 @@ html {
 .section-4 {
   height: 100vh;
   background-color: grey;
-  background-size: auto; }
+  background-size: auto;
+  background-attachment: fixed; }
 
 /*Texto y Boton index*/
 .center-text {
@@ -163,11 +164,12 @@ textarea {
 .bordesRedondeados {
   border-radius: 15px; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .navbar-nav {
     padding-left: 200px; }
   .section-1 {
-    background-image: url(../../images/fondo.jpg); }
+    background-image: url(../../images/fondo.jpg);
+    background-size: cover; }
   .section-3 {
     background-image: url(../../images/fondo2.jpg); }
   .contactoFlex {
