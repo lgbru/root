@@ -38,11 +38,12 @@ img {
   border: 0;
   max-width: 100%; }
 
-/*Codigo main CSS*/
+/*INDEX HTML*/
+/*tipografia de la pagina*/
 html {
-  /*tipografia de la pagina*/
   font-family: 'Inter', sans-serif !important; }
 
+/*Barra de navegacion*/
 .navbar {
   background-color: black; }
   .navbar a {
@@ -50,6 +51,7 @@ html {
   .navbar a:hover {
     text-decoration: underline; }
 
+/*Fondos de secciones index*/
 .section-1 {
   height: 100vh;
   background-image: url(../../images/fondovert.jpeg);
@@ -68,6 +70,12 @@ html {
   background-attachment: fixed;
   background-size: cover; }
 
+.section-4 {
+  height: 100vh;
+  background-color: grey;
+  background-size: cover; }
+
+/*Texto y Boton index*/
 .center-text {
   text-align: center;
   position: absolute;
@@ -76,7 +84,8 @@ html {
   transform: translate(-50%, -50%);
   color: white; }
   .center-text h1 {
-    font-size: 50px; }
+    font-size: 50px;
+    font-weight: bolder; }
 
 .button {
   background-color: #283038;
@@ -85,14 +94,89 @@ html {
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px; }
 
 .button:hover {
   background-color: #e2e416; }
 
+/*Formulario de Contacto*/
+fieldset {
+  border: 0;
+  margin: 50px; }
+  fieldset h2 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: black; }
+
+.login h2 {
+  color: white; }
+
+textarea {
+  resize: none;
+  font-family: sans-serif;
+  text-indent: 10px;
+  text-align: justify;
+  margin-bottom: 10px; }
+
+/*Diseno de recuadros del login*/
+.input {
+  border: none;
+  padding: 15px 25px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px; }
+
+.input-area {
+  padding: 15px 25px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px; }
+
+/*Flex Contacto final de pagina*/
+.contactoFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column; }
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  align-items: center; }
+
+.mapaHtml {
+  display: none; }
+
+/*NOSOTROS HTML*/
+.nosotrosFlex {
+  display: flex;
+  flex-direction: column; }
+  .nosotrosFlex .flexcontainer {
+    padding: 10px;
+    text-align: justify; }
+
+.bordesRedondeados {
+  border-radius: 15px; }
+
 @media only screen and (min-width: 768px) {
+  .navbar-nav {
+    padding-left: 200px; }
   .section-1 {
     background-image: url(../../images/fondo.jpg); }
   .section-3 {
-    background-image: url(../../images/fondo2.jpg); } }
+    background-image: url(../../images/fondo2.jpg); }
+  .contactoFlex {
+    flex-direction: row; }
+  .mapaHtml {
+    display: block; }
+  .nosotrosFlex {
+    display: flex;
+    flex-direction: row; }
+    .nosotrosFlex .flexcontainer {
+      padding: 20px;
+      flex: 100%;
+      width: 0; } }
