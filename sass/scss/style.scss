@@ -43,7 +43,7 @@ html {
   height: 100vh;
   background-image: url(../../images/fondovert.jpeg);
   background-attachment: fixed;
-  background-size: cover;
+  background-size: auto;
 }
 .section-2 {
   height: 75vh;
@@ -55,7 +55,8 @@ html {
   height: 100vh;
   background-image: url(../../images/fondovert3.jpeg);
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .section-4 {
   height: 100vh;
