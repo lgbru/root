@@ -29,7 +29,7 @@ html {
 
 /*Barra de navegacion*/
 .navbar {
-  background-color: black;
+  background-color: rgb(40, 48, 56);
   a {
     color: white;
   }
@@ -159,16 +159,14 @@ textarea {
 }
 
 /*Footer*/
-
-.footer-end {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-  color: white;
+a {
+  color: inherit;
+}
+footer {
+  background-color: #f2f2f2;
 }
 .sitemap {
+  padding: 10px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -178,7 +176,24 @@ textarea {
 .footer-column {
   display: flex;
   flex-direction: column;
+  row-gap: 10px;
 }
+.footer-end {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-policy {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
 .bordesRedondeados {
   border-radius: 15px;
 }
