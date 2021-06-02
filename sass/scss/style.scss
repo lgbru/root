@@ -177,6 +177,12 @@ footer {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    row-gap: 10px;
+  }
 }
 .footer-end {
   padding: 10px;
