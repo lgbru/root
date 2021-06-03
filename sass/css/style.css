@@ -45,7 +45,8 @@ html {
 
 /*Barra de navegacion*/
 .navbar {
-  background-color: #283038; }
+  height: 60px;
+  background-color: #1a1a1a; }
   .navbar a {
     color: white; }
   .navbar a:hover {
@@ -55,12 +56,12 @@ html {
 .section-1 {
   height: 100vh;
   background-image: url(../../images/fondovert.jpeg);
-  background-attachment: fixed;
-  background-size: auto; }
+  background-size: auto;
+  background-attachment: fixed; }
 
 .section-2 {
   height: 75vh;
-  background-color: white;
+  background-color: #ffffff;
   background-attachment: fixed;
   background-size: auto; }
 
@@ -75,6 +76,11 @@ html {
   background-color: grey;
   background-size: auto;
   background-attachment: fixed; }
+
+.section-blank {
+  background-color: #ffffff;
+  background-attachment: fixed;
+  background-size: auto; }
 
 /*Texto y Boton index*/
 .center-text {
@@ -95,11 +101,13 @@ html {
 .button:hover {
   background-color: #e2e416; }
 
-.section-flex {
+.index-flex {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  text-align: center;
+  justify-content: center;
+  row-gap: 50px; }
 
 /*Formulario de Contacto*/
 fieldset {
@@ -158,8 +166,16 @@ textarea {
   display: flex;
   flex-direction: column; }
   .nosotrosFlex .flexcontainer {
-    padding: 10px;
     text-align: justify; }
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: justify;
+  row-gap: 50px; }
 
 /*Footer*/
 a {
@@ -218,13 +234,39 @@ footer {
   .mapaHtml {
     display: block; }
   .nosotrosFlex {
+    padding-left: 200px;
+    padding-right: 200px;
     display: flex;
-    flex-direction: row; }
+    flex-direction: row-reverse;
+    column-gap: 50px; }
     .nosotrosFlex .flexcontainer {
-      padding: 20px;
-      flex: 100%;
-      width: 0; }
+      flex: 100%; }
   .sitemap {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly; } }
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-row-gap: 50px;
+  grid-column-gap: 100px;
+  justify-content: center;
+  padding-left: 150px;
+  padding-right: 150px; }
+  .grid-container .grid-item {
+    display: grid;
+    grid-gap: 10px;
+    text-align: justify; }
+
+/*.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 200px;
+  padding-right: 200px;
+  column-gap: 10px;
+  .gallery {
+    padding: 15px;
+  }*/
