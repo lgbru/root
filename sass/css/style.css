@@ -45,8 +45,8 @@ html {
 
 /*Barra de navegacion*/
 .navbar {
-  height: 60px;
-  background-color: #1a1a1a; }
+  background-color: #1a1a1a;
+  padding: 50px, 30px; }
   .navbar a {
     color: white; }
   .navbar a:hover {
@@ -77,7 +77,8 @@ html {
   background-size: auto;
   background-attachment: fixed; }
 
-.section-blank {
+.blank {
+  height: 100vh;
   background-color: #ffffff;
   background-attachment: fixed;
   background-size: auto; }
@@ -162,11 +163,11 @@ textarea {
   display: none; }
 
 /*NOSOTROS HTML*/
-.nosotrosFlex {
+.coaches-flex {
   display: flex;
-  flex-direction: column; }
-  .nosotrosFlex .flexcontainer {
-    text-align: justify; }
+  flex-direction: column;
+  text-align: justify;
+  row-gap: 25px; }
 
 .box {
   display: flex;
@@ -182,15 +183,14 @@ a {
   color: inherit; }
 
 footer {
-  background-color: #f2f2f2; }
+  background-color: #f2f2f2;
+  padding: 5px 30px 5px 30px; }
 
 .sitemap {
-  padding: 10px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  row-gap: 20px;
-  padding-left: 5px; }
+  row-gap: 20px; }
 
 .footer-column {
   display: flex;
@@ -203,14 +203,12 @@ footer {
     row-gap: 10px; }
 
 .footer-end {
-  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; }
 
 .footer-policy {
-  padding: 10px;
   display: flex;
   flex-direction: row;
   column-gap: 10px;
@@ -220,53 +218,132 @@ footer {
 .bordesRedondeados {
   border-radius: 15px; }
 
-@media only screen and (min-width: 1024px) {
-  .navbar-nav {
-    padding-left: 200px; }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 50px;
+  align-items: center; }
+  .grid-container .grid-item {
+    display: grid;
+    grid-row-gap: 10px; }
+  .grid-container p {
+    text-align: justify; }
+
+.historia-flex {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  text-align: justify;
+  justify-content: space-evenly; }
+  .historia-flex div {
+    row-gap: 10px; }
+  @media only screen and (min-width: 1024px) {
+    .historia-flex {
+      flex-direction: row; } }
+
+.padding {
+  padding: 5px 25px 5px 25px; }
+
+hr {
+  border-top: 10px solid #ccc;
+  width: 50px; }
+
+.left {
+  align-items: flex-start;
+  justify-content: flex-start; }
+
+.subtitle {
+  display: flex;
+  font-size: 30px;
+  justify-content: center; }
+
+.preset90 {
+  height: 90vh;
+  background-color: #ffffff;
+  background-size: auto;
+  overflow: auto; }
+
+.preset75 {
+  height: 75vh;
+  background-color: #ffffff;
+  background-size: auto;
+  overflow: auto; }
+
+.preset50 {
+  height: 50vh;
+  background-color: #ffffff;
+  background-size: auto;
+  overflow: auto; }
+
+@media only screen and (min-width: 1824px) {
+  nav {
+    background-color: red;
+    height: 130px; }
+    nav img {
+      margin-left: 10vh; }
+    nav .navbar-nav {
+      margin-left: 75vh; }
   .section-1 {
     background-image: url(../../images/fondo.jpg);
     background-size: cover; }
   .section-3 {
-    background-image: url(../../images/fondo2.jpg);
-    background-size: cover; }
+    background-image: url(../../images/fondovert.jpeg);
+    background-size: contain; }
   .contactoFlex {
     flex-direction: row; }
   .mapaHtml {
     display: block; }
-  .nosotrosFlex {
-    padding-left: 200px;
-    padding-right: 200px;
+  .coaches-flex {
     display: flex;
     flex-direction: row-reverse;
     column-gap: 50px; }
-    .nosotrosFlex .flexcontainer {
+    .coaches-flex .flexcontainer {
       flex: 100%; }
   .sitemap {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; } }
+    justify-content: space-evenly; }
+  .margin-wide {
+    transition: margin 0.2s linear;
+    margin-left: 20vw;
+    margin-right: 20vw; } }
 
-.grid-container {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  grid-row-gap: 50px;
-  grid-column-gap: 100px;
-  justify-content: center;
-  padding-left: 150px;
-  padding-right: 150px; }
-  .grid-container .grid-item {
-    display: grid;
-    grid-gap: 10px;
-    text-align: justify; }
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) and (max-width: 1823px) {
+  nav {
+    background-color: red;
+    height: 130px; }
+    nav img {
+      margin-left: 10vh; }
+    nav .navbar-nav {
+      margin-left: 75vh; }
+  .margin-lg {
+    transition: margin 0.2s linear;
+    margin-left: 5vw;
+    margin-right: 5vw; } }
 
-/*.box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-left: 200px;
-  padding-right: 200px;
-  column-gap: 10px;
-  .gallery {
-    padding: 15px;
-  }*/
+/* iPads (landscape) ----------- */
+@media only screen and (min-width: 1024px) and (max-width: 1223px) {
+  nav {
+    background-color: red;
+    height: 130px; }
+    nav img {
+      margin-left: 10vh; }
+    nav .navbar-nav {
+      margin-left: 50vh; }
+  .margin-md {
+    transition: margin 0.2s linear;
+    margin-left: 3vw;
+    margin-right: 3vw; } }
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .margin-sm {
+    transition: margin 0.2s linear;
+    margin-left: 2vw;
+    margin-right: 2vw; } }
+
+@media only screen and (max-width: 479px) {
+  .margin-xs {
+    transition: margin 0.2s linear;
+    margin-left: 25px;
+    margin-right: 25px; } }
