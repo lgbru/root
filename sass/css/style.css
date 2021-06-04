@@ -130,12 +130,7 @@ body {
 
 /*Formulario de Contacto*/
 fieldset {
-  border: 4px solid black;
   padding: 20px; }
-  fieldset h2 {
-    font-size: 48px;
-    font-weight: bolder;
-    color: black; }
 
 .login h2 {
   color: white; }
@@ -166,19 +161,23 @@ textarea {
 /*Flex Contacto final de pagina*/
 .contactoFlex {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column; }
+  flex-direction: column;
+  column-gap: 10vw;
+  row-gap: 10vw;
+  justify-content: center;
+  align-items: center; }
+  .contactoFlex div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    align-items: center;
+    justify-content: center; }
+  .contactoFlex form {
+    background-color: #f2f2f2; }
 
 #formulario {
   display: flex;
-  flex-direction: column;
-  color: white;
-  text-align: center;
-  align-items: center; }
-
-.mapaHtml {
-  display: none; }
+  flex-direction: column; }
 
 /*NOSOTROS HTML*/
 .coaches-flex {
@@ -186,15 +185,6 @@ textarea {
   flex-direction: column;
   text-align: justify;
   row-gap: 25px; }
-
-.box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  text-align: justify;
-  row-gap: 50px; }
 
 /*Footer*/
 a {
@@ -268,12 +258,15 @@ footer {
   padding: 5px 25px 5px 25px; }
 
 hr {
-  border-top: 10px solid #ccc;
+  border-top: 10px solid #1a1a1a;
   width: 50px; }
 
 .left {
   align-items: flex-start;
   justify-content: flex-start; }
+
+.grey-bg {
+  background-color: #283038; }
 
 .subtitle {
   display: flex;
@@ -287,8 +280,7 @@ hr {
   overflow: auto; }
 
 .preset75 {
-  height: 75vh;
-  background-color: #ffffff;
+  height: auto;
   background-size: auto;
   overflow: auto; }
 
@@ -348,8 +340,6 @@ hr {
     background-size: contain; }
   .contactoFlex {
     flex-direction: row; }
-  .mapaHtml {
-    display: block; }
   .coaches-flex {
     display: flex;
     flex-direction: row-reverse;

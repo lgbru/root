@@ -9,8 +9,8 @@
     <!-- Link Fuente -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- Link font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/9f72d9ab3d.js" crossorigin="anonymous"></script>
     <!-- Link animaciones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Linkeado al CSS -->
@@ -54,10 +54,10 @@
     </section>
 <!-- Noticias:  -->
     <hr>
-    <article id="noticias">
-      <div class="container bg-light jumbotron">
+    <article class="jumbotron bg-white" id="noticias">
+      <div class="container">
         <div class="row">
-          <div class="col m-2">
+          <div class="col m-2 border-bottom">
             <h2>Noticias de la semana</h2>
           </div>
         </div>
@@ -67,7 +67,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 border-bottom">
             <img src="images/kurash.jpg" alt="">
           </div>
           <div class="col-md-8">
@@ -109,32 +109,35 @@
     </article>
 <!-- Contacto -->
     <hr>
-    <section class="">
-      <a id="contacto"></a>
-      <div class="">
-        <form class="container animate__animated animate__fadeIn animate__slow m-5" action="index.html" method="post">
-          <fieldset>
-            <div id="formulario">
-              <input class="input-area" type="text" name="nombre" placeholder="Nombre">
-              <input class="input-area" type="text" name="apellido" placeholder="Apellido">
-              <input class="input-area" type="email" name="email" placeholder="Email">
-              <input class="input-area" type="number" name="celular" placeholder="Celular">
-              <textarea name="Contacto" rows="8" cols="40" placeholder="Mensaje"></textarea>
-              <div class="">
-                <input class="button" type="submit" name="" value="Enviar">
+    <section class="preset75 grey-bg text-white">
+      <div class="contactoFlex m-3">
+        <div class="">
+          <h2>¿Queres escribirnos algo?</h2>
+          <h3>Te estaremos respondiendo a la brevedad!</h3>
+          <form class="animate__animated animate__fadeIn animate__slow" action="index.html" method="post">
+            <fieldset>
+              <div id="formulario">
+                <input class="input-area" type="text" name="nombre" placeholder="Nombre">
+                <input class="input-area" type="text" name="apellido" placeholder="Apellido">
+                <input class="input-area" type="email" name="email" placeholder="Email">
+                <input class="input-area" type="number" name="celular" placeholder="Celular">
+                <textarea name="Contacto" rows="8" cols="40" placeholder="Mensaje"></textarea>
+                <div class="">
+                  <input class="button" type="submit" name="" value="Enviar">
+                </div>
               </div>
-            </div>
-          </fieldset>
-        </form>
-        <div class="mapaHtml">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2779.436612859753!2d-67.51934648391301!3d-45.842560442077605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde45546218f4de7%3A0xd8255ec56281da76!2sClub%20K%C3%B6re.%20Centro%20de%20entrenamiento%2Fcanchas!5e0!3m2!1sen!2sar!4v1617063923908!5m2!1sen!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </fieldset>
+          </form>
+        </div>
+        <div>
+          <h2>Te ayudamos a llegar!</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2779.436612859748!2d-67.5193464839298!3d-45.842560442077705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde45546218f4de7%3A0xd8255ec56281da76!2sClub%20K%C3%B6re.%20Centro%20de%20entrenamiento%2Fcanchas!5e0!3m2!1sen!2sar!4v1622845994968!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
     </section>
   </main>
 <!-- Footer -->
   <footer>
-    <hr>
     <div class="sitemap m-2">
       <div class="footer-column">
         <h3>Mapa del sitio</h3>
@@ -150,9 +153,9 @@
       <div class="footer-column">
         <h3>Contacto</h3>
         <ul>
-          <li><p>info@clubköre.com.ar</p></li>
-          <li><p>+5499999999</p></li>
-          <li><p>Avenida Siempreviva 742</p></li>
+          <li><i class="fas fa-at fa-fw"></i>info@clubköre.com.ar</li>
+          <li><i class="fas fa-phone fa-fw"></i>+549999999</li>
+          <li><i class="fas fa-map-marker fa-fw"></i>Avenida Siempreviva 742</li>
         </ul>
         <h4>Seguinos en nuestras redes</h4>
         <ul>
