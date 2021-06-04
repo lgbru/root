@@ -297,37 +297,21 @@ hr {
 
 @media only screen and (max-width: 575px) {
   nav img {
-    margin-left: 10vh; }
-  .margin-xs {
-    transition: margin 0.2s linear;
-    margin-left: 25px;
-    margin-right: 25px; } }
+    margin-left: 10vh; } }
 
 @media (min-width: 576px) {
   nav img {
-    margin-left: 10vh; }
-  .margin-sm {
-    transition: margin 0.2s linear;
-    margin-left: 2vw;
-    margin-right: 2vw; } }
+    margin-left: 10vh; } }
 
 @media (min-width: 768px) {
   nav img {
-    margin-left: 10vh; }
-  .margin-md {
-    transition: margin 0.2s linear;
-    margin-left: 3vw;
-    margin-right: 3vw; } }
+    margin-left: 10vh; } }
 
 @media (min-width: 992px) {
   nav {
     height: 130px; }
     nav img {
-      margin-left: 10vh; }
-  .margin-lg {
-    transition: margin 0.2s linear;
-    margin-left: 5vw;
-    margin-right: 5vw; } }
+      margin-left: 10vh; } }
 
 @media (min-width: 1200px) {
   nav {
@@ -355,8 +339,34 @@ hr {
   .sitemap {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; }
+    justify-content: space-evenly; } }
+
+@media (min-width: 1200px) {
   .margin-wide {
     transition: margin 0.2s linear;
     margin-left: 15vw;
     margin-right: 15vw; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .margin-lg {
+    transition: margin 0.2s linear;
+    margin-left: 6vw;
+    margin-right: 6vw; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .margin-md {
+    transition: margin 0.2s linear;
+    margin-left: 4vw;
+    margin-right: 4vw; } }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .margin-sm {
+    transition: margin 0.2s linear;
+    margin-left: 2vw;
+    margin-right: 2vw; } }
+
+@media only screen and (max-width: 575px) {
+  .margin-xs {
+    transition: margin 0.2s linear;
+    margin-left: 25px;
+    margin-right: 25px; } }
