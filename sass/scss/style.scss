@@ -27,15 +27,19 @@ html {
   font-family: 'Montserrat', sans-serif !important;
 }
 h1 {
+  font-size: 48px;
   font-weight: 900;
 }
 h2 {
+  font-size: 24px;
   font-weight: 700;
 }
 h3 {
   font-weight: 500;
 }
-
+body {
+  text-align: justify;
+}
 /*Barra de navegacion*/
 .navbar {
   background-color: #1a1a1a;
@@ -90,13 +94,6 @@ h3 {
 }
 
 /*Texto y Boton index*/
-.center-text {
-  color: white;
-  h1 {
-    font-size: 50px;
-    font-weight: bolder;
-  }
-}
 .button {
   background-color: rgb(40, 48, 56);
   color: rgb(226, 228, 22);
@@ -218,6 +215,11 @@ footer {
     list-style-type: none;
     row-gap: 10px;
   }
+  form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
 }
 .footer-end {
   display: flex;
@@ -327,30 +329,14 @@ hr {
 
 // Extra small devices (portrait phones, less than 576px)
 @media only screen and (max-width : 575px) {
-  nav {
-    img {
-      margin-left: 10vh;
-    }
-  }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-  nav {
-    img {
-      margin-left: 10vh;
-    }
-  }
-
  }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  nav {
-    img {
-      margin-left: 10vh;
-    }
-  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -404,39 +390,33 @@ hr {
  }
 
  // MARGINS
-
-.margin-wide {
+.default-margins {
   @media (min-width: 1200px) {
     transition: margin 0.2s linear;
     margin-left: 15vw;
     margin-right: 15vw;
   }
-}
-.margin-lg {
   @media (min-width: 992px) and (max-width: 1199px) {
     transition: margin 0.2s linear;
     margin-left: 6vw;
     margin-right: 6vw;
   }
-}
-.margin-md {
   @media (min-width: 768px) and (max-width: 991px) {
     transition: margin 0.2s linear;
     margin-left: 4vw;
     margin-right: 4vw;
   }
-}
-.margin-sm {
   @media (min-width: 576px) and (max-width: 767px) {
     transition: margin 0.2s linear;
     margin-left: 2vw;
     margin-right: 2vw;
   }
-}
-.margin-xs {
   @media only screen and (max-width : 575px) {
     transition: margin 0.2s linear;
     margin-left: 25px;
     margin-right: 25px;
   }
+}
+.top-border {
+  border-top: 4px solid black;
 }

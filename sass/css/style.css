@@ -44,13 +44,18 @@ html {
   font-family: 'Montserrat', sans-serif !important; }
 
 h1 {
+  font-size: 48px;
   font-weight: 900; }
 
 h2 {
+  font-size: 24px;
   font-weight: 700; }
 
 h3 {
   font-weight: 500; }
+
+body {
+  text-align: justify; }
 
 /*Barra de navegacion*/
 .navbar {
@@ -101,12 +106,6 @@ h3 {
   background-attachment: fixed; }
 
 /*Texto y Boton index*/
-.center-text {
-  color: white; }
-  .center-text h1 {
-    font-size: 50px;
-    font-weight: bolder; }
-
 .button {
   background-color: #283038;
   color: #e2e416;
@@ -220,6 +219,10 @@ footer {
     flex-direction: column;
     list-style-type: none;
     row-gap: 10px; }
+  .footer-column form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px; }
 
 .footer-end {
   display: flex;
@@ -324,18 +327,6 @@ hr {
   .separate {
     padding-top: 65px; } }
 
-@media only screen and (max-width: 575px) {
-  nav img {
-    margin-left: 10vh; } }
-
-@media (min-width: 576px) {
-  nav img {
-    margin-left: 10vh; } }
-
-@media (min-width: 768px) {
-  nav img {
-    margin-left: 10vh; } }
-
 @media (min-width: 992px) {
   nav {
     height: 130px; }
@@ -371,31 +362,34 @@ hr {
     justify-content: space-evenly; } }
 
 @media (min-width: 1200px) {
-  .margin-wide {
+  .default-margins {
     transition: margin 0.2s linear;
     margin-left: 15vw;
     margin-right: 15vw; } }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .margin-lg {
+  .default-margins {
     transition: margin 0.2s linear;
     margin-left: 6vw;
     margin-right: 6vw; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .margin-md {
+  .default-margins {
     transition: margin 0.2s linear;
     margin-left: 4vw;
     margin-right: 4vw; } }
 
 @media (min-width: 576px) and (max-width: 767px) {
-  .margin-sm {
+  .default-margins {
     transition: margin 0.2s linear;
     margin-left: 2vw;
     margin-right: 2vw; } }
 
 @media only screen and (max-width: 575px) {
-  .margin-xs {
+  .default-margins {
     transition: margin 0.2s linear;
     margin-left: 25px;
     margin-right: 25px; } }
+
+.top-border {
+  border-top: 4px solid black; }

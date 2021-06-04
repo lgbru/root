@@ -40,11 +40,11 @@
   <main>
 <!-- Inicio  -->
     <section class="landing index-flex">
-      <div class="index-flex margin-wide margin-lg margin-md margin-sm margin-xs">
-        <div class="center-text">
+      <div class="index-flex margin-wide margin-lg margin-md margin-sm margin-xs text-white">
+        <div class="">
           <h1>BIENVENIDO AL CLUB KÖRE</h1>
         </div>
-        <div class="text-white">
+        <div class="">
           <h2>Complejo deportivo con dos salones. Box de crossfit y salón de Fitness.Cancha fútbol 5. Acercate a conocernos!</h2>
         </div>
         <div class="">
@@ -54,14 +54,28 @@
     </section>
 <!-- Noticias:  -->
     <hr>
-    <section class="noticias">
-      <div class="jumbotron jumbotron-fluid bg-dark">
-        <div class="container">
-          <h1 class="display-4">Fluid jumbotron</h1>
-          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    <article id="noticias">
+      <div class="container bg-light jumbotron">
+        <div class="row">
+          <div class="col m-2">
+            <h2>Noticias de la semana</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col m-2">
+            <h3>Lorem ipsum</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="images/kurash.jpg" alt="">
+          </div>
+          <div class="col-md-8">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
         </div>
       </div>
-    </section>
+    </article>
 <!-- Imagenes -->
     <hr>
     <section class="imagenes">
@@ -73,7 +87,7 @@
     </section>
 <!-- Historias -->
     <hr>
-    <article class="historias margin-wide margin-lg margin-md margin-sm margin-xs">
+    <article class="historias default-margins">
       <h2 class="m-btm">¿Porque entrenar con nosotros?</h2>
       <div class="grid-container">
         <div class="grid-item">
@@ -97,8 +111,8 @@
     <hr>
     <section class="">
       <a id="contacto"></a>
-      <div class="contactoFlex bg-dark">
-        <form class="animate__animated animate__fadeIn animate__slow" action="index.html" method="post">
+      <div class="">
+        <form class="container animate__animated animate__fadeIn animate__slow m-5" action="index.html" method="post">
           <fieldset>
             <div id="formulario">
               <input class="input-area" type="text" name="nombre" placeholder="Nombre">
@@ -108,7 +122,6 @@
               <textarea name="Contacto" rows="8" cols="40" placeholder="Mensaje"></textarea>
               <div class="">
                 <input class="button" type="submit" name="" value="Enviar">
-                <input class="button" type="reset" name="" value="Limpiar formulario">
               </div>
             </div>
           </fieldset>
@@ -120,21 +133,22 @@
     </section>
   </main>
 <!-- Footer -->
-  <hr>
   <footer>
-    <div class="sitemap">
+    <hr>
+    <div class="sitemap m-2">
       <div class="footer-column">
-        <h4>Mapa del sitio</h4>
+        <h3>Mapa del sitio</h3>
         <ul>
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="#">Actividades</a></li>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Noticias</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="assets/socios.html">Socios</a></li>
+          <li><a href="assets/actividades.html">Actividades</a></li>
+          <li><a href="assets/nosotros.html">Nosotros</a></li>
+          <li><a href="#noticias">Noticias</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </div>
       <div class="footer-column">
-        <h4>Contacto</h4>
+        <h3>Contacto</h3>
         <ul>
           <li><p>info@clubköre.com.ar</p></li>
           <li><p>+5499999999</p></li>
@@ -146,21 +160,21 @@
         </ul>
       </div>
       <div class="footer-column">
-        <h4>Enterate de todo</h4>
+        <h3>Enterate de todo</h3>
         <div class="">
           <form class="" action="index.html" method="post">
-            <p>Suscribite a nuestro Newsletter</p>
+            <p>Suscribite a nuestro Newsletter!</p>
             <input type="text" name="email" placeholder="Email" class="input-area">
-            <input type="button" name="submit" placeholder="Suscribirse" class="button">
+            <input type="button" name="submit" value="Suscribirse" class="button">
           </form>
         </div>
       </div>
     </div>
-    <div class="footer-end">
+    <div class="border-top footer-end m-3">
       <p>© 2021 Club Köre.</p>
       <p>Todos los derechos reservados.</p>
     </div>
-    <div class="footer-policy">
+    <div class="footer-policy m-3">
       <a href="#">Términos y Condiciones</a>
       <a href="#">Políticas de Cookies</a>
       <a href="#">Políticas de Privacidad</a>
