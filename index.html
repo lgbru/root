@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <!-- Link Fuente -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- Link font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Link animaciones -->
@@ -28,10 +28,10 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link active" href="#">INICIO <span class="sr-only">(current)</span></a>
-          <a class="nav-link" href="#">SOCIOS</a>
-          <a class="nav-link" href="#">ACTIVIDADES</a>
-          <a class="nav-link" href="assets/nosotros.html">NOSOTROS</a>
-          <a class="nav-link" href="#contacto">CONTACTO</a>
+          <a class="nav-link active" href="#">SOCIOS</a>
+          <a class="nav-link active" href="#">ACTIVIDADES</a>
+          <a class="nav-link active" href="assets/nosotros.html">NOSOTROS</a>
+          <a class="nav-link active" href="#contacto">CONTACTO</a>
         </div>
       </div>
     </nav>
@@ -39,45 +39,65 @@
   <body>
   <main>
 <!-- Inicio  -->
-    <section class="section-1 index-flex">
+    <section class="landing index-flex">
       <div class="index-flex margin-wide margin-lg margin-md margin-sm margin-xs">
-        <div class="index-flex-item center-text">
-          <h1>BIENVENIDO AL CLUB KORE</h1>
+        <div class="center-text">
+          <h1>BIENVENIDO AL CLUB KÖRE</h1>
         </div>
-        <div class="index-flex-item">
-          <button class="button" type="button" name="Unite al Club!">LOREM IPSUM</button>
+        <div class="text-white">
+          <h2>Complejo deportivo con dos salones. Box de crossfit y salón de Fitness.Cancha fútbol 5. Acercate a conocernos!</h2>
+        </div>
+        <div class="">
+          <button class="button" type="button" name="Unite al Club!">UNITE AL CLUB</button>
         </div>
       </div>
     </section>
-<!-- Noticias -->
-    <section class="section-3">
+<!-- Noticias:  -->
+    <hr>
+    <section class="noticias">
+      <div class="jumbotron jumbotron-fluid bg-dark">
+        <div class="container">
+          <h1 class="display-4">Fluid jumbotron</h1>
+          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        </div>
+      </div>
+    </section>
+<!-- Imagenes -->
+    <hr>
+    <section class="imagenes">
+      <div class="grid-container m-4">
+        <div><img src="images/fondovert.jpeg" alt=""></div>
+        <div><img src="images/fondovert1.jpeg" alt=""></div>
+        <div><img src="images/fondovert2.jpeg" alt=""></div>
+      </div>
     </section>
 <!-- Historias -->
     <hr>
-    <article class="margin-wide margin-lg margin-md margin-sm margin-xs">
-      <h2>Historias Nuestras</h2>
+    <article class="historias margin-wide margin-lg margin-md margin-sm margin-xs">
+      <h2 class="m-btm">¿Porque entrenar con nosotros?</h2>
       <div class="grid-container">
         <div class="grid-item">
           <img src="images/index.jpg" alt="">
+          <h3>Bruno</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="grid-item">
+          <img src="images/grupo.jpeg" alt="">
+          <h3>Mili</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="grid-item">
+          <img src="images/franco.jpeg" alt="">
           <h3>Franco</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="grid-item">
-          <img src="images/index.jpg" alt="">
-          <h3>Mechy</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="grid-item">
-          <img src="images/index.jpg" alt="">
-          <h3>Normita</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
     </article>
 <!-- Contacto -->
-    <section class="section-4">
+    <hr>
+    <section class="">
       <a id="contacto"></a>
-      <div class="contactoFlex">
+      <div class="contactoFlex bg-dark">
         <form class="animate__animated animate__fadeIn animate__slow" action="index.html" method="post">
           <fieldset>
             <div id="formulario">
@@ -93,8 +113,8 @@
             </div>
           </fieldset>
         </form>
-      <div class="mapaHtml">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2779.436612859753!2d-67.51934648391301!3d-45.842560442077605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde45546218f4de7%3A0xd8255ec56281da76!2sClub%20K%C3%B6re.%20Centro%20de%20entrenamiento%2Fcanchas!5e0!3m2!1sen!2sar!4v1617063923908!5m2!1sen!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="mapaHtml">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2779.436612859753!2d-67.51934648391301!3d-45.842560442077605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde45546218f4de7%3A0xd8255ec56281da76!2sClub%20K%C3%B6re.%20Centro%20de%20entrenamiento%2Fcanchas!5e0!3m2!1sen!2sar!4v1617063923908!5m2!1sen!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
     </section>
@@ -115,7 +135,7 @@
       <div class="footer-column">
         <h4>Contacto</h4>
         <ul>
-          <li><p>info@clubkore.com.ar</p></li>
+          <li><p>info@clubköre.com.ar</p></li>
           <li><p>+5499999999</p></li>
           <li><p>Avenida Siempreviva 742</p></li>
         </ul>
@@ -137,7 +157,7 @@
     </div>
 <!-- Copy Footer -->
     <div class="footer-end">
-      <p>© 2021 Club Kore.</p>
+      <p>© 2021 Club Köre.</p>
       <p>Todos los derechos reservados.</p>
     </div>
 <!-- Last footer -->
