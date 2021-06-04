@@ -82,6 +82,12 @@ h3 {
   background-attachment: fixed;
   background-size: auto;
 }
+.sociosbg {
+  height: 75vh;
+  background-image: url(../../images/socios.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 /*Texto y Boton index*/
 .center-text {
@@ -298,6 +304,27 @@ hr {
 .m-btm {
   margin-bottom: 5vh;
 }
+.m-top {
+  margin-top: 5vh;
+}
+.separate {
+  @media (min-width: 1200px) {
+    padding-top: clamp(150px, 10%, 190px);
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    padding-top: 140px;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    padding-top: 70px;
+  }
+  @media (min-width: 576px) and (max-width: 767px) {
+    padding-top: 70px;
+  }
+  @media only screen and (max-width : 575px) {
+    padding-top: 65px;
+  }
+}
+
 // Extra small devices (portrait phones, less than 576px)
 @media only screen and (max-width : 575px) {
   nav {

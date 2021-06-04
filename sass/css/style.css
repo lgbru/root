@@ -94,6 +94,12 @@ h3 {
   background-attachment: fixed;
   background-size: auto; }
 
+.sociosbg {
+  height: 75vh;
+  background-image: url(../../images/socios.jpeg);
+  background-size: cover;
+  background-attachment: fixed; }
+
 /*Texto y Boton index*/
 .center-text {
   color: white; }
@@ -294,6 +300,29 @@ hr {
 
 .m-btm {
   margin-bottom: 5vh; }
+
+.m-top {
+  margin-top: 5vh; }
+
+@media (min-width: 1200px) {
+  .separate {
+    padding-top: clamp(150px, 10%, 190px); } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .separate {
+    padding-top: 140px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .separate {
+    padding-top: 70px; } }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .separate {
+    padding-top: 70px; } }
+
+@media only screen and (max-width: 575px) {
+  .separate {
+    padding-top: 65px; } }
 
 @media only screen and (max-width: 575px) {
   nav img {
