@@ -117,6 +117,25 @@ body {
   justify-content: center;
   row-gap: 2vh;
 }
+.title {
+  font-size: 48px;
+  font-weight: 900;
+  width: 75%;
+  @media (min-width: 1200px) {
+  font-size: 7vw;
+  width: 50%;
+  }
+}
+.actividades-flex {
+  background-image: url(../../images/fondovert.jpeg);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  div {
+    margin-left: 5%;
+  }
+}
 
 /*Formulario de Contacto*/
 fieldset {
@@ -342,6 +361,7 @@ hr {
 }
 
 // Extra large devices (large desktops, 1200px and up)
+
 @media (min-width: 1200px) {
   nav {
     height: 130px;
@@ -376,18 +396,27 @@ hr {
     flex-direction: row;
     justify-content: space-evenly;
   }
- }
- @media (min-width: 1200px) {
-  .container{
-    max-width: 90%;
-   }
- }
+ .container {
+    max-width: 100%;
+  }
+  iframe {
+    height: 450px;
+    width: 600px;
+  }
+}
+.grid-gap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
  // MARGINS
 .default-margins {
   @media (min-width: 1200px) {
     transition: margin 0.2s linear;
     margin-left: 15vw;
     margin-right: 15vw;
+  }
   @media (min-width: 992px) and (max-width: 1199px) {
     transition: margin 0.2s linear;
     margin-left: 6vw;
@@ -411,4 +440,7 @@ hr {
 }
 .top-border {
   border-top: 4px solid black;
+}
+.gap {
+  grid-gap: 5%;
 }
