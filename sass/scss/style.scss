@@ -27,11 +27,11 @@ html {
   font-family: 'Montserrat', sans-serif !important;
 }
 h1 {
-  font-size: 48px;
+  font-size: 6vh;
   font-weight: 900;
 }
 h2 {
-  font-size: 24px;
+  font-size: 3vh;
   font-weight: 700;
 }
 h3 {
@@ -116,6 +116,10 @@ body {
   text-align: center;
   justify-content: center;
   row-gap: 2vh;
+}
+.socios-flex {
+  display: flex;
+  flex-direction: column;
 }
 .title {
   font-size: 48px;
@@ -322,19 +326,19 @@ hr {
 }
 .separate {
   @media (min-width: 1200px) {
-    padding-top: clamp(150px, 10%, 190px);
+    padding-top: 130px;
   }
   @media (min-width: 992px) and (max-width: 1199px) {
-    padding-top: 140px;
+    padding-top: 130px;
   }
   @media (min-width: 768px) and (max-width: 991px) {
-    padding-top: 70px;
+    padding-top: 60px;
   }
   @media (min-width: 576px) and (max-width: 767px) {
-    padding-top: 70px;
+    padding-top: 60px;
   }
   @media only screen and (max-width : 575px) {
-    padding-top: 65px;
+    padding-top: 60px;
   }
 }
 
