@@ -57,6 +57,10 @@ h3 {
 body {
   text-align: justify; }
 
+hr {
+  border-top: 10px solid #283038;
+  width: 50px; }
+
 /*Barra de navegacion*/
 .navbar {
   background-color: #1a1a1a; }
@@ -67,43 +71,6 @@ body {
     color: white; }
   .navbar a:hover {
     text-decoration: underline; }
-
-/*Fondos de secciones index*/
-.landing {
-  height: 80vh;
-  background-image: url(../../images/fondovert.jpeg);
-  background-size: auto;
-  background-attachment: fixed; }
-
-.section-2 {
-  height: 75vh;
-  background-color: #ffffff;
-  background-attachment: fixed;
-  background-size: auto; }
-
-.section-3 {
-  height: 100vh;
-  background-image: url(../../images/fondovert3.jpeg);
-  background-attachment: fixed;
-  background-size: auto; }
-
-.section-4 {
-  height: 100vh;
-  background-color: grey;
-  background-size: auto;
-  background-attachment: fixed; }
-
-.blank {
-  height: 100vh;
-  background-color: #ffffff;
-  background-attachment: fixed;
-  background-size: auto; }
-
-.sociosbg {
-  height: 75vh;
-  background-image: url(../../images/socios.jpeg);
-  background-size: cover;
-  background-attachment: fixed; }
 
 /*Texto y Boton index*/
 .button {
@@ -121,6 +88,23 @@ body {
   color: #283038; }
 
 .index-flex {
+  background-image: url(../../images/fondovert.jpeg);
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  row-gap: 2vh; }
+  @media (min-width: 768px) {
+    .index-flex {
+      background-image: url(../../images/historia.png); } }
+
+.socios-flex {
+  background-image: url(../../images/socios.jpeg);
+  background-size: cover;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -128,27 +112,53 @@ body {
   justify-content: center;
   row-gap: 2vh; }
 
-.socios-flex {
-  display: flex;
-  flex-direction: column; }
-
-.title {
-  font-size: 48px;
-  font-weight: 900;
-  width: 75%; }
-  @media (min-width: 1200px) {
-    .title {
-      font-size: 7vw;
-      width: 50%; } }
-
 .actividades-flex {
-  background-image: url(../../images/fondovert.jpeg);
+  background-image: url(../../images/actividades.jpg);
+  background-size: cover;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center; }
   .actividades-flex div {
     margin-left: 5%; }
+
+.contactoFlex {
+  display: flex;
+  flex-direction: column;
+  column-gap: 10vw;
+  row-gap: 10vw;
+  justify-content: center;
+  align-items: center; }
+  .contactoFlex div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    align-items: center;
+    justify-content: center; }
+  .contactoFlex form {
+    background-color: #f2f2f2; }
+
+#formulario {
+  display: flex;
+  flex-direction: column; }
+
+.coaches-flex {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  row-gap: 25px; }
+
+.historia-flex {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  text-align: justify;
+  justify-content: space-evenly; }
+  .historia-flex div {
+    row-gap: 10px; }
+  @media only screen and (min-width: 1024px) {
+    .historia-flex {
+      flex-direction: row; } }
 
 /*Formulario de Contacto*/
 fieldset {
@@ -179,34 +189,6 @@ textarea {
   text-align: center;
   text-decoration: none;
   font-size: 16px; }
-
-/*Flex Contacto final de pagina*/
-.contactoFlex {
-  display: flex;
-  flex-direction: column;
-  column-gap: 10vw;
-  row-gap: 10vw;
-  justify-content: center;
-  align-items: center; }
-  .contactoFlex div {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1em;
-    align-items: center;
-    justify-content: center; }
-  .contactoFlex form {
-    background-color: #f2f2f2; }
-
-#formulario {
-  display: flex;
-  flex-direction: column; }
-
-/*NOSOTROS HTML*/
-.coaches-flex {
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-  row-gap: 25px; }
 
 /*Footer*/
 a {
@@ -248,9 +230,6 @@ footer {
   align-items: center;
   justify-content: center; }
 
-.bordesRedondeados {
-  border-radius: 15px; }
-
 .grid-container {
   display: grid;
   grid-row: 1fr;
@@ -263,24 +242,11 @@ footer {
   .grid-container p {
     text-align: justify; }
 
-.historia-flex {
-  display: flex;
-  flex-direction: column;
-  row-gap: 25px;
-  text-align: justify;
-  justify-content: space-evenly; }
-  .historia-flex div {
-    row-gap: 10px; }
-  @media only screen and (min-width: 1024px) {
-    .historia-flex {
-      flex-direction: row; } }
+.bordesRedondeados {
+  border-radius: 15px; }
 
 .padding {
   padding: 5px 25px 5px 25px; }
-
-hr {
-  border-top: 10px solid #1a1a1a;
-  width: 50px; }
 
 .left {
   align-items: flex-start;
@@ -290,9 +256,8 @@ hr {
   background-color: #283038; }
 
 .subtitle {
-  display: flex;
-  font-size: 30px;
-  justify-content: center; }
+  font-weight: 600;
+  font-size: 3vh; }
 
 .preset90 {
   height: 90vh;
@@ -319,6 +284,33 @@ hr {
 
 .m-top {
   margin-top: 5vh; }
+
+.flex-socios {
+  display: flex;
+  flex-direction: row; }
+
+.title {
+  font-size: 48px;
+  font-weight: 900;
+  width: 75%; }
+  @media (min-width: 1200px) {
+    .title {
+      font-size: 7vw;
+      width: 50%; } }
+
+.grid-gap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px; }
+
+.top-border {
+  border-top: 4px solid black; }
+
+.gap {
+  grid-gap: 5%; }
+
+.color-yellow {
+  color: #e2e416; }
 
 @media (min-width: 1200px) {
   .separate {
@@ -356,9 +348,6 @@ hr {
   .landing {
     background-image: url(../../images/fondo.jpg);
     background-size: cover; }
-  .section-3 {
-    background-image: url(../../images/fondovert.jpeg);
-    background-size: contain; }
   .contactoFlex {
     flex-direction: row; }
   .coaches-flex {
@@ -376,11 +365,6 @@ hr {
   iframe {
     height: 450px;
     width: 600px; } }
-
-.grid-gap {
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px; }
 
 @media (min-width: 1200px) {
   .default-margins {
@@ -411,9 +395,3 @@ hr {
     transition: margin 0.2s linear;
     margin-left: 25px;
     margin-right: 25px; } }
-
-.top-border {
-  border-top: 4px solid black; }
-
-.gap {
-  grid-gap: 5%; }
